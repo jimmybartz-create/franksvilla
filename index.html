@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franks Villa RV Park</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f5ed;
+      color: #222;
+    }
+
+    header {
+      background: #064c35;
+      color: white;
+      text-align: center;
+      padding: 45px 20px 35px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 23px;
+      margin: 8px 0 0;
+      font-style: italic;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: white;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      color: #064c35;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 55px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .included {
+      font-size: 21px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ffd900;
+      color: #111;
+      padding: 16px 27px;
+      margin: 8px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #e9c600;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #064c35;
+      font-size: 30px;
+    }
+
+    .amenities {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .amenity {
+      background: white;
+      width: 220px;
+      padding: 25px;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .location {
+      background: #064c35;
+      color: white;
+      padding: 45px 20px;
+      text-align: center;
+    }
+
+    .location h2 {
+      font-size: 30px;
+      margin-top: 0;
+    }
+
+    .location p {
+      font-size: 21px;
+      line-height: 1.6;
+    }
+
+    .documents {
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    .documents h2 {
+      color: #064c35;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer a {
+      color: #ffd900;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      .price {
+        font-size: 45px;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Franks Villa RV Park</h1>
+  <p>Great Location. Easy Living.</p>
+</header>
+
+<section class="hero">
+  <h2>Spacious Sites for Short or Long Stays</h2>
+
+  <div class="price">Starting at $400/month</div>
+
+  <div class="included">
+    Electric • Water • Trash Included
+  </div>
+
+  <a class="button" href="tel:5125900363">
+    Call 512-590-0363
+  </a>
+</section>
+
+<section class="section">
+  <h2>Everything You Need</h2>
+
+  <div class="amenities">
+    <div class="amenity">⚡ Electric Included</div>
+    <div class="amenity">💧 Water Included</div>
+    <div class="amenity">🗑️ Trash Included</div>
+  </div>
+</section>
+
+<section class="location">
+  <h2>Convenient Central Texas Location</h2>
+
+  <p>
+    Just west of I-35 between Bruceville and Lorena.
+  </p>
+
+  <p>
+    Convenient to Waco • Temple • McGregor
+  </p>
+</section>
+
+<section class="documents">
+  <h2>Interested in a Site?</h2>
+
+  <p>Daily, weekly and monthly stays available.</p>
+
+  <!-- We will add your Google Form link here -->
+  <a class="button" href="#">
+    Apply for a Site
+  </a>
+
+  <!-- We will add your PDF here -->
+  <a class="button" href="#">
+    Park Information & Rules
+  </a>
+</section>
+
+<footer>
+  <strong>Franks Villa RV Park</strong>
+  <p>
+    Call or text:
+    <a href="tel:5125900363">512-590-0363</a>
+  </p>
+  <p>FranksVilla.com</p>
+</footer>
+
+</body>
+</html>
