@@ -3,156 +3,344 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Franks Villa RV Park</title>
+
+  <title>Franks Villa RV Park | Bruceville & Lorena, Texas</title>
+  <meta name="description" content="Franks Villa RV Park offers spacious RV sites just west of I-35 between Bruceville and Lorena, Texas. Sites starting at $400 per month with electric, water and trash included.">
 
   <style>
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
+      color: #202020;
       background: #f7f5ed;
-      color: #222;
+      line-height: 1.5;
     }
+
+    /* HEADER */
 
     header {
       background: #064c35;
       color: white;
       text-align: center;
-      padding: 45px 20px 35px;
+      padding: 28px 20px 25px;
+      border-bottom: 6px solid #ffd900;
     }
 
     header h1 {
-      font-size: 48px;
       margin: 0;
+      font-size: 44px;
+      letter-spacing: 1px;
       text-transform: uppercase;
     }
 
     header p {
-      font-size: 23px;
-      margin: 8px 0 0;
+      margin: 5px 0 0;
+      font-size: 21px;
       font-style: italic;
     }
 
+    /* HERO */
+
     .hero {
+      min-height: 590px;
+      background:
+        linear-gradient(
+          rgba(0,0,0,.22),
+          rgba(0,0,0,.38)
+        ),
+        url("IMG_2268.jpg") center center / cover no-repeat;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 50px 20px;
-      background: white;
+      padding: 40px 20px;
+    }
+
+    .hero-box {
+      background: rgba(0, 50, 35, .88);
+      color: white;
+      max-width: 720px;
+      width: 100%;
+      padding: 35px 30px;
+      border-radius: 12px;
+      border-bottom: 6px solid #ffd900;
     }
 
     .hero h2 {
-      font-size: 34px;
-      color: #064c35;
-      margin-bottom: 10px;
+      margin: 0 0 8px;
+      font-size: 40px;
     }
 
     .price {
-      font-size: 55px;
-      font-weight: bold;
-      margin: 15px 0;
+      color: #ffd900;
+      font-size: 49px;
+      font-weight: 800;
+      margin: 7px 0;
     }
 
     .included {
       font-size: 21px;
-      margin-bottom: 30px;
+      margin-bottom: 23px;
     }
+
+    /* BUTTONS */
 
     .button {
       display: inline-block;
-      background: #ffd900;
-      color: #111;
-      padding: 16px 27px;
-      margin: 8px;
+      padding: 15px 25px;
+      margin: 7px;
       border-radius: 7px;
       text-decoration: none;
-      font-size: 19px;
-      font-weight: bold;
+      font-size: 18px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .button-yellow {
+      background: #ffd900;
+      color: #111;
+    }
+
+    .button-white {
+      background: white;
+      color: #064c35;
+    }
+
+    .button-green {
+      background: #064c35;
+      color: white;
     }
 
     .button:hover {
-      background: #e9c600;
+      transform: translateY(-2px);
+      opacity: .92;
     }
+
+    /* GENERAL SECTIONS */
 
     .section {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
-      padding: 45px 20px;
-      text-align: center;
+      padding: 60px 25px;
     }
 
-    .section h2 {
+    .section-title {
+      text-align: center;
       color: #064c35;
-      font-size: 30px;
+      font-size: 34px;
+      margin: 0 0 12px;
     }
+
+    .section-intro {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 35px;
+      font-size: 19px;
+    }
+
+    /* AMENITIES */
 
     .amenities {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
-      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
     .amenity {
       background: white;
-      width: 220px;
-      padding: 25px;
+      padding: 30px 20px;
       border-radius: 10px;
-      font-size: 20px;
-      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
     }
+
+    .amenity-icon {
+      font-size: 40px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .amenity strong {
+      font-size: 20px;
+      color: #064c35;
+    }
+
+    /* PHOTO SECTION */
+
+    .photo-section {
+      background: white;
+    }
+
+    .photo-grid {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 25px;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+      box-shadow: 0 5px 20px rgba(0,0,0,.15);
+    }
+
+    .photo-text h2 {
+      color: #064c35;
+      font-size: 34px;
+      margin-top: 0;
+    }
+
+    .photo-text p {
+      font-size: 19px;
+    }
+
+    /* LOCATION */
 
     .location {
       background: #064c35;
       color: white;
-      padding: 45px 20px;
-      text-align: center;
+    }
+
+    .location-grid {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 25px;
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
     }
 
     .location h2 {
-      font-size: 30px;
-      margin-top: 0;
+      font-size: 34px;
+      margin: 0 0 15px;
+      color: #ffd900;
     }
 
     .location p {
-      font-size: 21px;
-      line-height: 1.6;
+      font-size: 19px;
     }
 
-    .documents {
+    .cities {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    /* APPLICATION */
+
+    .apply {
       text-align: center;
-      padding: 45px 20px;
+      background: #f7f5ed;
+      padding: 65px 20px;
     }
 
-    .documents h2 {
+    .apply h2 {
       color: #064c35;
+      font-size: 36px;
+      margin: 0 0 10px;
     }
+
+    .apply p {
+      font-size: 19px;
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
 
     footer {
-      background: #222;
+      background: #1c1c1c;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 35px 20px;
+    }
+
+    footer h3 {
+      margin: 0 0 5px;
+      font-size: 23px;
+    }
+
+    footer p {
+      margin: 6px;
     }
 
     footer a {
       color: #ffd900;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    @media (max-width: 600px) {
+    /* MOBILE */
+
+    @media (max-width: 750px) {
+
       header h1 {
-        font-size: 36px;
+        font-size: 32px;
       }
 
-      .price {
-        font-size: 45px;
+      header p {
+        font-size: 18px;
+      }
+
+      .hero {
+        min-height: 520px;
+      }
+
+      .hero-box {
+        padding: 28px 18px;
       }
 
       .hero h2 {
-        font-size: 28px;
+        font-size: 29px;
+      }
+
+      .price {
+        font-size: 39px;
+      }
+
+      .included {
+        font-size: 18px;
+      }
+
+      .button {
+        display: block;
+        max-width: 350px;
+        margin: 10px auto;
+      }
+
+      .amenities {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-grid,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title,
+      .photo-text h2,
+      .location h2,
+      .apply h2 {
+        font-size: 29px;
       }
     }
   </style>
@@ -166,68 +354,173 @@
 </header>
 
 <section class="hero">
-  <h2>Spacious Sites for Short or Long Stays</h2>
 
-  <div class="price">Starting at $400/month</div>
+  <div class="hero-box">
 
-  <div class="included">
-    Electric • Water • Trash Included
+    <h2>Spacious RV Sites</h2>
+
+    <div class="price">
+      Starting at $400/month
+    </div>
+
+    <div class="included">
+      Electric • Water • Trash Included
+    </div>
+
+    <a class="button button-yellow"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSc4vh6JOJPId6LpTq9L7lWZWxgOavBs-l851_mTJ0MRlaEgSg/viewform?usp=header"
+       target="_blank">
+       Apply for a Site
+    </a>
+
+    <a class="button button-white"
+       href="tel:5125900363">
+       Call / Text 512-590-0363
+    </a>
+
   </div>
 
-  <a class="button" href="tel:5125900363">
-    Call 512-590-0363
-  </a>
 </section>
+
 
 <section class="section">
-  <h2>Everything You Need</h2>
+
+  <h2 class="section-title">
+    Short or Long Stays
+  </h2>
+
+  <p class="section-intro">
+    Spacious grassy RV sites in a quiet Central Texas setting,
+    with daily, weekly and monthly stays available.
+  </p>
 
   <div class="amenities">
-    <div class="amenity">⚡ Electric Included</div>
-    <div class="amenity">💧 Water Included</div>
-    <div class="amenity">🗑️ Trash Included</div>
+
+    <div class="amenity">
+      <span class="amenity-icon">⚡</span>
+      <strong>Electric Included</strong>
+    </div>
+
+    <div class="amenity">
+      <span class="amenity-icon">💧</span>
+      <strong>Water Included</strong>
+    </div>
+
+    <div class="amenity">
+      <span class="amenity-icon">🗑️</span>
+      <strong>Trash Included</strong>
+    </div>
+
   </div>
+
 </section>
+
+
+<section class="photo-section">
+
+  <div class="photo-grid">
+
+    <img src="IMG_2269.jpg"
+         alt="Spacious grassy sites at Franks Villa RV Park">
+
+    <div class="photo-text">
+
+      <h2>Room to Settle In</h2>
+
+      <p>
+        Franks Villa RV Park offers open, grassy sites with plenty
+        of room around your RV.
+      </p>
+
+      <p>
+        Whether you need a place for a short stay or somewhere to
+        settle in longer, our convenient location keeps you close
+        to I-35 while offering a more relaxed setting.
+      </p>
+
+      <a class="button button-green"
+         href="Franks%20Villa%20Map%20and%20Rules.pdf"
+         target="_blank">
+         View Park Map & Rules
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
 
 <section class="location">
-  <h2>Convenient Central Texas Location</h2>
 
-  <p>
-    Just west of I-35 between Bruceville and Lorena.
-  </p>
+  <div class="location-grid">
 
-  <p>
-    Convenient to Waco • Temple • McGregor
-  </p>
+    <div>
+
+      <h2>Convenient Central Texas Location</h2>
+
+      <p>
+        Franks Villa RV Park is located just west of I-35
+        between Bruceville and Lorena.
+      </p>
+
+      <div class="cities">
+        Waco • Temple • McGregor
+      </div>
+
+    </div>
+
+    <img src="IMG_2270.jpg"
+         alt="Aerial view of the area surrounding Franks Villa RV Park">
+
+  </div>
+
 </section>
 
-<section class="documents">
-  <h2>Interested in a Site?</h2>
 
-  <p>Daily, weekly and monthly stays available.</p>
+<section class="apply">
 
-  <!-- We will add your Google Form link here -->
- <a class="button"
-   href="https://docs.google.com/forms/d/e/1FAIpQLSc4vh6JOJPId6LpTq9L7lWZWxgOavBs-l851_mTJ0MRlaEgSg/viewform?usp=header"
-   target="_blank">
-  Apply for a Site
-</a>
+  <h2>Looking for an RV Site?</h2>
 
-  <!-- We will add your PDF here -->
- <a class="button"
-   href="Franks%20Villa%20Map%20and%20Rules.pdf"
-   target="_blank">
-  Park Map & Rules
-</a> 
+  <p>
+    Apply online or call us for more information about availability.
+  </p>
+
+  <a class="button button-yellow"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSc4vh6JOJPId6LpTq9L7lWZWxgOavBs-l851_mTJ0MRlaEgSg/viewform?usp=header"
+     target="_blank">
+     Apply for a Site
+  </a>
+
+  <a class="button button-green"
+     href="tel:5125900363">
+     Call / Text 512-590-0363
+  </a>
+
+  <a class="button button-green"
+     href="Franks%20Villa%20Map%20and%20Rules.pdf"
+     target="_blank">
+     Park Map & Rules
+  </a>
+
 </section>
+
 
 <footer>
-  <strong>Franks Villa RV Park</strong>
+
+  <h3>Franks Villa RV Park</h3>
+
+  <p>Great Location. Easy Living.</p>
+
   <p>
-    Call or text:
-    <a href="tel:5125900363">512-590-0363</a>
+    Call or Text:
+    <a href="tel:5125900363">
+      512-590-0363
+    </a>
   </p>
+
   <p>FranksVilla.com</p>
+
 </footer>
 
 </body>
