@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Franks Villa RV Park | Bruceville & Lorena, Texas</title>
-  <meta name="description" content="Franks Villa RV Park offers spacious RV sites just west of I-35 between Bruceville and Lorena, Texas. Sites starting at $400 per month with electric, water and trash included.">
+  <title>Franks Villa RV Park | Central Texas</title>
+
+  <meta name="description"
+        content="Franks Villa RV Park offers spacious RV sites just west of I-35 between Bruceville and Lorena, Texas. Monthly sites start at $400 with electric, water and trash included. Daily and weekly stays are also available.">
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -23,6 +26,7 @@
       background: #f7f5ed;
       line-height: 1.5;
     }
+
 
     /* HEADER */
 
@@ -47,10 +51,12 @@
       font-style: italic;
     }
 
+
     /* HERO */
 
     .hero {
       min-height: 590px;
+
       background:
         linear-gradient(
           rgba(0,0,0,.22),
@@ -92,6 +98,12 @@
       margin-bottom: 23px;
     }
 
+    .monthly-note {
+      font-size: 17px;
+      margin: 5px 0 20px;
+    }
+
+
     /* BUTTONS */
 
     .button {
@@ -125,6 +137,7 @@
       opacity: .92;
     }
 
+
     /* GENERAL SECTIONS */
 
     .section {
@@ -146,6 +159,35 @@
       margin: 0 auto 35px;
       font-size: 19px;
     }
+
+
+    /* STAY OPTIONS */
+
+    .stay-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-bottom: 45px;
+    }
+
+    .stay-card {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+    }
+
+    .stay-card h3 {
+      color: #064c35;
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    .stay-card p {
+      font-size: 18px;
+    }
+
 
     /* AMENITIES */
 
@@ -173,6 +215,7 @@
       font-size: 20px;
       color: #064c35;
     }
+
 
     /* PHOTO SECTION */
 
@@ -206,6 +249,7 @@
     .photo-text p {
       font-size: 19px;
     }
+
 
     /* LOCATION */
 
@@ -246,7 +290,8 @@
       margin-top: 20px;
     }
 
-    /* APPLICATION */
+
+    /* CONTACT / APPLICATION */
 
     .apply {
       text-align: center;
@@ -262,8 +307,18 @@
 
     .apply p {
       font-size: 19px;
-      margin-bottom: 25px;
+      max-width: 700px;
+      margin: 15px auto;
     }
+
+    .contact-divider {
+      width: 100px;
+      height: 4px;
+      background: #ffd900;
+      border: 0;
+      margin: 35px auto;
+    }
+
 
     /* FOOTER */
 
@@ -280,7 +335,7 @@
     }
 
     footer p {
-      margin: 6px;
+      margin: 7px;
     }
 
     footer a {
@@ -288,6 +343,7 @@
       text-decoration: none;
       font-weight: bold;
     }
+
 
     /* MOBILE */
 
@@ -327,6 +383,10 @@
         margin: 10px auto;
       }
 
+      .stay-options {
+        grid-template-columns: 1fr;
+      }
+
       .amenities {
         grid-template-columns: 1fr;
       }
@@ -343,15 +403,27 @@
         font-size: 29px;
       }
     }
+
   </style>
 </head>
 
+
 <body>
 
+
+<!-- HEADER -->
+
 <header>
+
   <h1>Franks Villa RV Park</h1>
+
   <p>Great Location. Easy Living.</p>
+
 </header>
+
+
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -360,17 +432,21 @@
     <h2>Spacious RV Sites</h2>
 
     <div class="price">
-      Starting at $400/month
+      Monthly Sites Starting at $400
     </div>
 
     <div class="included">
       Electric • Water • Trash Included
     </div>
 
+    <div class="monthly-note">
+      Online application is for monthly rentals.
+    </div>
+
     <a class="button button-yellow"
        href="https://docs.google.com/forms/d/e/1FAIpQLSc4vh6JOJPId6LpTq9L7lWZWxgOavBs-l851_mTJ0MRlaEgSg/viewform?usp=header"
        target="_blank">
-       Apply for a Site
+       Apply for a Monthly Site
     </a>
 
     <a class="button button-white"
@@ -383,38 +459,120 @@
 </section>
 
 
+
+<!-- RENTAL OPTIONS -->
+
 <section class="section">
 
   <h2 class="section-title">
-    Short or Long Stays
+    Daily, Weekly & Monthly Stays
   </h2>
 
   <p class="section-intro">
-    Spacious grassy RV sites in a quiet Central Texas setting,
-    with daily, weekly and monthly stays available.
+    Spacious grassy RV sites in a quiet Central Texas setting.
+    Choose the stay that works for you.
   </p>
+
+
+  <div class="stay-options">
+
+
+    <!-- MONTHLY -->
+
+    <div class="stay-card">
+
+      <h3>Monthly Rentals</h3>
+
+      <p>
+        Monthly sites start at $400.
+        An application is required for monthly rentals.
+      </p>
+
+      <a class="button button-yellow"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSc4vh6JOJPId6LpTq9L7lWZWxgOavBs-l851_mTJ0MRlaEgSg/viewform?usp=header"
+         target="_blank">
+         Apply for a Monthly Site
+      </a>
+
+    </div>
+
+
+    <!-- DAILY / WEEKLY -->
+
+    <div class="stay-card">
+
+      <h3>Daily & Weekly Rentals</h3>
+
+      <p>
+        No application is needed for daily or weekly stays.
+        Call, text or email us for availability and rates.
+      </p>
+
+      <a class="button button-green"
+         href="tel:5125900363">
+         Call / Text
+      </a>
+
+      <a class="button button-green"
+         href="mailto:Jimmybartz@gmail.com">
+         Email Us
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- AMENITIES -->
 
   <div class="amenities">
 
     <div class="amenity">
-      <span class="amenity-icon">⚡</span>
-      <strong>Electric Included</strong>
+
+      <span class="amenity-icon">
+        ⚡
+      </span>
+
+      <strong>
+        Electric Included
+      </strong>
+
     </div>
 
-    <div class="amenity">
-      <span class="amenity-icon">💧</span>
-      <strong>Water Included</strong>
-    </div>
 
     <div class="amenity">
-      <span class="amenity-icon">🗑️</span>
-      <strong>Trash Included</strong>
+
+      <span class="amenity-icon">
+        💧
+      </span>
+
+      <strong>
+        Water Included
+      </strong>
+
+    </div>
+
+
+    <div class="amenity">
+
+      <span class="amenity-icon">
+        🗑️
+      </span>
+
+      <strong>
+        Trash Included
+      </strong>
+
     </div>
 
   </div>
 
 </section>
 
+
+
+<!-- PARK PHOTO -->
 
 <section class="photo-section">
 
@@ -423,9 +581,12 @@
     <img src="IMG_2269.jpg"
          alt="Spacious grassy sites at Franks Villa RV Park">
 
+
     <div class="photo-text">
 
-      <h2>Room to Settle In</h2>
+      <h2>
+        Room to Settle In
+      </h2>
 
       <p>
         Franks Villa RV Park offers open, grassy sites with plenty
@@ -451,13 +612,18 @@
 </section>
 
 
+
+<!-- LOCATION -->
+
 <section class="location">
 
   <div class="location-grid">
 
     <div>
 
-      <h2>Convenient Central Texas Location</h2>
+      <h2>
+        Convenient Central Texas Location
+      </h2>
 
       <p>
         Franks Villa RV Park is located just west of I-35
@@ -470,6 +636,7 @@
 
     </div>
 
+
     <img src="IMG_2270.jpg"
          alt="Aerial view of the area surrounding Franks Villa RV Park">
 
@@ -478,24 +645,51 @@
 </section>
 
 
+
+<!-- CONTACT / APPLICATION -->
+
 <section class="apply">
 
-  <h2>Looking for an RV Site?</h2>
+  <h2>
+    Need a Monthly RV Site?
+  </h2>
 
   <p>
-    Apply online or call us for more information about availability.
+    Complete our online application to apply for a monthly rental.
   </p>
 
   <a class="button button-yellow"
      href="https://docs.google.com/forms/d/e/1FAIpQLSc4vh6JOJPId6LpTq9L7lWZWxgOavBs-l851_mTJ0MRlaEgSg/viewform?usp=header"
      target="_blank">
-     Apply for a Site
+     Apply for a Monthly Site
   </a>
+
+
+  <hr class="contact-divider">
+
+
+  <h2>
+    Need a Daily or Weekly Site?
+  </h2>
+
+  <p>
+    No application is required.
+    Call, text or email us for availability and rates.
+  </p>
 
   <a class="button button-green"
      href="tel:5125900363">
      Call / Text 512-590-0363
   </a>
+
+  <a class="button button-green"
+     href="mailto:Jimmybartz@gmail.com">
+     Email Us
+  </a>
+
+
+  <br><br>
+
 
   <a class="button button-green"
      href="Franks%20Villa%20Map%20and%20Rules.pdf"
@@ -506,11 +700,18 @@
 </section>
 
 
+
+<!-- FOOTER -->
+
 <footer>
 
-  <h3>Franks Villa RV Park</h3>
+  <h3>
+    Franks Villa RV Park
+  </h3>
 
-  <p>Great Location. Easy Living.</p>
+  <p>
+    Great Location. Easy Living.
+  </p>
 
   <p>
     Call or Text:
@@ -519,9 +720,19 @@
     </a>
   </p>
 
-  <p>FranksVilla.com</p>
+  <p>
+    Email:
+    <a href="mailto:Jimmybartz@gmail.com">
+      Jimmybartz@gmail.com
+    </a>
+  </p>
+
+  <p>
+    FranksVilla.com
+  </p>
 
 </footer>
+
 
 </body>
 </html>
